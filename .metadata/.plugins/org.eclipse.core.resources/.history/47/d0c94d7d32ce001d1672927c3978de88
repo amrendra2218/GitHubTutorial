@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class SeleniumIntro {
-	public static void main(String args[]) throws InterruptedException {
+	public static void main(String args[]) {
 		
 		//System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 		
@@ -26,7 +26,6 @@ public class SeleniumIntro {
 		//Validating that we are hitting the same url as desired or it hacked
 		System.out.println(driver.getCurrentUrl());
 		driver.close();
-		Thread.sleep(1000000);
 		
 	}
 
