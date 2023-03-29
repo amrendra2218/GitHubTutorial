@@ -26,7 +26,7 @@ public class SeleniumIntro {
 		//Validating that we are hitting the same url as desired or it hacked
 		System.out.println(driver.getCurrentUrl());
 		driver.close();
-		Thread.sleep(2000000);
+		Thread.sleep(1000000);
 		
 	}
 
