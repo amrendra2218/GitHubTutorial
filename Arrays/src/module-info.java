@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author amren
+ *
+ */
+module arrayPractis {
+}

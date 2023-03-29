@@ -1,0 +1,16 @@
+package locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GettingStarted {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("Webdriver.chrome.driver", "C:\\Selenium\\chromedriver");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.myntra.com/");
+		Thread.sleep(3000);
+
+	}
+
+}

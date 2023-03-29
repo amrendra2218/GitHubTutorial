@@ -1,0 +1,23 @@
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GettingStarted {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.cowin.gov.in/");
+		Thread.sleep(1000);
+		driver.get("https://selfregistration.cowin.gov.in/");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@formcontrolname=\"mobile_number\"]")).sendKeys("9031167760");
+		Thread.sleep(1000);
+		driver.findElement(By.className("button-inner")).click();
+		Thread.sleep(3000);
+		driver.close();
+	}
+
+}
